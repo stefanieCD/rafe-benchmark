@@ -1,14 +1,6 @@
 # RAFE
 
-**RAFE** (Retrieval-Augmented Forecasting Evaluation) is a memory-aware
-benchmark for retrieval-augmented time series forecasting. It treats the
-method–memory pair as a first-class experimental unit: after the forecaster
-is frozen, policies are compared under explicit budgets for physical rows,
-unique history records, returned slots, and weight concentration, together
-with time-legal eligibility (`e + H ≤ t`). The contribution is this
-controlled, auditable evaluation protocol and the accompanying interventions,
-not a new forecasting architecture, and not a claim that one memory policy
-stably dominates the others.
+RAFE (Retrieval-Augmented Forecasting Evaluation) is a memory-aware benchmark for retrieval-augmented time series forecasting. It treats each method–memory pair as an experimental unit and controls physical rows, unique history records, reference slots, weight concentration, and temporal eligibility. RAFE integrates controlled memory interventions with forecast commitment, paired scoring, and portable replay. Its evaluations span forecasting methods and memory policies across domains, backbones, horizons, and sampling frequencies, providing empirical evidence and practical guidance for memory selection and forecaster design.
 
 This repository is the public source artifact for the VLDB 2027 / PVLDB
 Volume 20 Experiment, Analysis & Benchmark manuscript:
